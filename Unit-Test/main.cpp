@@ -7,21 +7,21 @@
 //
 
 #include <iostream>
-#include "ApplicationPreferences.hpp"
-using namespace AppPref;
+//#include "ApplicationPreferences.hpp"
+//#include "GenericPreference.hpp"
+//using namespace AppPref;
 
 int main(int argc, const char * argv[])
 {
-    //std::cout << "Hello, World!\n";
-    GenericPreference pref1("Full Screen", true);
-    cout << pref1.getValueString() << endl;
-    GenericPreference pref2("Inactivity Timer", 100);
-    cout << pref2.getValueString() << endl;
-    GenericPreference pref3("Content Scale", 0.5);
-    cout << pref3.getValueString() << endl;
-    GenericPreference pref4("Name", "JJ");
-    cout << pref4.getValueString() << endl;
+    std::cout << "Hello, World!\n";
+//    GenericPreference pref1("Full Screen", true);
+//    cout << pref1.getConsoleString() << endl;
+//    GenericPreference pref2("Inactivity Timer", 100);
+//    cout << pref2.getConsoleString() << endl;
+//    GenericPreference pref3("Content Scale", 0.5);
+//    cout << pref3.getConsoleString() << endl;
+//    GenericPreference pref4("Name", "JJ");
+//    cout << pref4.getConsoleString() << endl;
     
-    //cout << "The value of \"" << pref.getKey() << "\" is " << pref.getValue().boolValue << endl;
     return 0;
 }
