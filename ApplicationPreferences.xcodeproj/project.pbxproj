@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		674DC79D1FD8A2E4005B8D07 /* libApplicationPreferences.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 678FBB201FD88BBF00879167 /* libApplicationPreferences.dylib */; };
+		674DC7A01FD9C5F8005B8D07 /* GenericPreference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 674DC79E1FD9C5F8005B8D07 /* GenericPreference.cpp */; };
+		674DC7A11FD9C5F8005B8D07 /* GenericPreference.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 674DC79F1FD9C5F8005B8D07 /* GenericPreference.hpp */; };
 		678FBB291FD88BD600879167 /* ApplicationPreferences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 678FBB271FD88BD600879167 /* ApplicationPreferences.cpp */; };
 		678FBB2A1FD88BD600879167 /* ApplicationPreferences.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 678FBB281FD88BD600879167 /* ApplicationPreferences.hpp */; };
 		678FBB3F1FD8A0E500879167 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 678FBB3E1FD8A0E500879167 /* main.cpp */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		674DC79E1FD9C5F8005B8D07 /* GenericPreference.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenericPreference.cpp; sourceTree = "<group>"; };
+		674DC79F1FD9C5F8005B8D07 /* GenericPreference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GenericPreference.hpp; sourceTree = "<group>"; };
 		678FBB201FD88BBF00879167 /* libApplicationPreferences.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libApplicationPreferences.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		678FBB271FD88BD600879167 /* ApplicationPreferences.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ApplicationPreferences.cpp; sourceTree = "<group>"; };
 		678FBB281FD88BD600879167 /* ApplicationPreferences.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ApplicationPreferences.hpp; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		678FBB171FD88BBF00879167 = {
 			isa = PBXGroup;
 			children = (
+				674DC79E1FD9C5F8005B8D07 /* GenericPreference.cpp */,
+				674DC79F1FD9C5F8005B8D07 /* GenericPreference.hpp */,
 				678FBB271FD88BD600879167 /* ApplicationPreferences.cpp */,
 				678FBB281FD88BD600879167 /* ApplicationPreferences.hpp */,
 				678FBB3D1FD8A0E500879167 /* Unit-Test */,
@@ -89,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				678FBB2A1FD88BD600879167 /* ApplicationPreferences.hpp in Headers */,
+				674DC7A11FD9C5F8005B8D07 /* GenericPreference.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674DC7A01FD9C5F8005B8D07 /* GenericPreference.cpp in Sources */,
 				678FBB291FD88BD600879167 /* ApplicationPreferences.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
