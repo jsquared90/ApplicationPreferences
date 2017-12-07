@@ -10,54 +10,22 @@
 #include <iostream>
 
 using namespace AppPref;
-using namespace std;
 
 // destructor
-GenericPreference::~GenericPreference()
+ApplicationPreferences::~ApplicationPreferences()
 {
-    
-}
-
-string GenericPreference::getKey()
-{
-    return _key;
-}
-
-GenericPreference::ValueType GenericPreference::getType()
-{
-    return _type;
-}
-
-Value GenericPreference::getValue()
-{
-    return _value;
-}
-
-string GenericPreference::getValueString()
-{
-    string v;
-    string t;
-    switch (_type)
+    // destroy each preference
+    vector<GenericPreference>::iterator begin = _preferences.begin();
+    vector<GenericPreference>::iterator end = _preferences.end();
+    for (auto i = begin; i < end; ++i)
     {
-        case ValueType::Boolean:
-            v = _value.boolValue ? "true" : "false";
-            t = "Boolean";
-            break;
-        case ValueType::Integer:
-            v = _value.intValue;
-            t = "Integer";
-            break;
-        case ValueType::Double:
-            v = _value.doubleValue;
-            t = "Double";
-            break;
-        case ValueType::String:
-            v = _value.stringValue;
-            t = "String";
-            break;
+        delete &i;
     }
-    string s = "The value for " + _key + " is " + v + " (" + t + ")";
-    return s;
+}
+
+void ApplicationPreferences::addPreference(const GenericPreference preference)
+{
+    _preferences.push_back(preference);
 }
 
 
